@@ -10,3 +10,11 @@
 
 /* Responsive service-area map reused from the existing Refined site. */
 .service-map{margin:0;align-self:center;overflow:hidden;background:#fff;border:1px solid var(--line)}.service-map a{display:block}.service-map img{width:100%;height:auto;aspect-ratio:783/655;object-fit:contain}.service-map figcaption{padding:14px 16px;color:#56615c;font-size:.78rem;line-height:1.6}
+
+/* Mobile refinements: larger gallery tiles, calmer light sections, tighter spacing. */
+@media(max-width:800px){.sticky-mobile{padding:8px max(12px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom));gap:8px}.sticky-mobile a{padding:12px 4px;font-size:.66rem}}
+@media(max-width:550px){:root{--paper:#eef1ed}.section{padding:54px 0}.section-sm{padding:42px 0}.section-title-row{margin-bottom:26px}.section-title-row .lead{margin:15px 0 0}.page-hero-inner{padding:48px 0 42px}.page-hero .lead{font-size:1rem;line-height:1.55}.gallery-grid{grid-template-columns:minmax(0,1fr);gap:14px}.gallery-tile{min-height:0;aspect-ratio:4/5}.gallery-tile img,.gallery-tile video{width:100%;height:100%;object-fit:cover}.gallery-tile figcaption{font-size:.74rem;padding:50px 17px 17px}.gallery-tabs{gap:6px}.gallery-tabs button{flex:1;padding:11px 7px;font-size:.66rem}.service-map figcaption{font-size:.75rem;padding:12px 14px}}
+
+/* Fix narrow gallery cards and improve contrast over the dark page headers. */
+.gallery-tile{margin:0}
+.hero .lead,.page-hero .lead{color:#bbc6c1}
