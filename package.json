@@ -1,1 +1,9 @@
-{"name":"refined-detailing-newcastle","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build-pages.mjs","dev":"python3 -m http.server 8000 --directory dist","check":"node --check dist/app.js && node --check build-pages.mjs"}}
+{
+  "name": "refined-detailing-newcastle",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "npm run build && python3 -m http.server 8000 --directory dist"
+  }
+}
